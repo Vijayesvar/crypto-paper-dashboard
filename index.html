@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vega · Crypto Paper Trading</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#151a23; --panel2:#1b2230; --line:#252d3d;
+    --txt:#e6eaf2; --muted:#8a93a6; --green:#28c76f; --red:#ff5c5c; --accent:#4c8dff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:16px;max-width:1100px;margin:0 auto}
+  header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  h1{font-size:18px;margin:0;font-weight:650;letter-spacing:.3px}
+  h1 .lev{color:var(--accent);font-weight:700}
+  .updated{font-size:12px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .card .label{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .card .val{font-size:22px;font-weight:700;margin-top:6px}
+  .sub{font-size:12px;color:var(--muted);margin-top:2px}
+  .green{color:var(--green)} .red{color:var(--red)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:16px}
+  .panel h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:0 0 10px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:right;padding:8px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+  .pill{padding:2px 7px;border-radius:6px;font-size:11px;font-weight:700}
+  .pill.long{background:rgba(40,199,111,.15);color:var(--green)}
+  .pill.short{background:rgba(255,92,92,.15);color:var(--red)}
+  .tag{font-size:11px;font-weight:700;padding:2px 6px;border-radius:5px}
+  .tag.OPEN{background:rgba(76,141,255,.15);color:var(--accent)}
+  .tag.CLOSE{background:rgba(138,147,166,.18);color:var(--muted)}
+  .tag.LIQ{background:rgba(255,92,92,.2);color:var(--red)}
+  .empty{color:var(--muted);font-size:13px;padding:10px 4px}
+  .wrap{overflow-x:auto}
+  canvas{max-height:260px}
+  footer{color:var(--muted);font-size:11px;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>📈 Vega · Crypto Paper Trading <span class="lev" id="levTag"></span></h1>
+  <div class="updated" id="updated">loading…</div>
+</header>
+
+<div class="grid" id="cards"></div>
+
+<div class="panel">
+  <h2>Equity curve</h2>
+  <canvas id="equityChart"></canvas>
+</div>
+
+<div class="panel">
+  <h2>Open positions</h2>
+  <div class="wrap"><table id="posTable"></table></div>
+</div>
+
+<div class="panel">
+  <h2>Recent trades</h2>
+  <div class="wrap"><table id="tradeTable"></table></div>
+</div>
+
+<footer>Paper money · real prices · placeholder strategy (no edge). Not financial advice. Auto-refreshes every 60s.</footer>
+
+<script>
+const fmt = n => "₹" + Number(n).toLocaleString("en-IN",{maximumFractionDigits:2});
+const pct = n => (n>=0?"+":"") + Number(n).toFixed(2) + "%";
+const cls = n => n>=0 ? "green" : "red";
+const sym = s => s.replace("USDT","");
+let chart;
+
+function card(label, val, sub, color){
+  return `<div class="card"><div class="label">${label}</div><div class="val ${color||''}">${val}</div>${sub?`<div class="sub">${sub}</div>`:""}</div>`;
+}
+
+async function load(){
+  try{
+    const r = await fetch("./state.json?t=" + Date.now(), {cache:"no-store"});
+    const s = await r.json();
+    render(s);
+  }catch(e){
+    document.getElementById("updated").textContent = "failed to load state.json";
+  }
+}
+
+function render(s){
+  document.getElementById("levTag").textContent = s.leverage ? `· ${s.leverage}x` : "";
+  const d = new Date(s.updatedAt);
+  document.getElementById("updated").textContent = "Updated " + d.toLocaleString("en-IN",{timeZone:"Asia/Kolkata"});
+
+  document.getElementById("cards").innerHTML =
+    card("Equity", fmt(s.equity), pct(s.pnlPct)+" all-time", cls(s.pnl)) +
+    card("Total P&L", fmt(s.pnl), "from "+fmt(s.startingCash), cls(s.pnl)) +
+    card("Free cash", fmt(s.cash)) +
+    card("Realized P&L", fmt(s.realizedPnL), null, cls(s.realizedPnL)) +
+    card("Open", s.openCount, "positions") +
+    card("Trades", s.tradeCount, "total");
+
+  // equity chart
+  const eh = s.equityHistory || [];
+  const labels = eh.map(p=>new Date(p.t).toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit"}));
+  const data = eh.map(p=>p.equity);
+  const up = data.length && data[data.length-1] >= s.startingCash;
+  const col = up ? "#28c76f" : "#ff5c5c";
+  const ctx = document.getElementById("equityChart");
+  if(chart) chart.destroy();
+  chart = new Chart(ctx,{
+    type:"line",
+    data:{labels,datasets:[{data,borderColor:col,backgroundColor:col+"22",fill:true,tension:.25,pointRadius:0,borderWidth:2}]},
+    options:{plugins:{legend:{display:false}},scales:{
+      x:{grid:{color:"#252d3d"},ticks:{color:"#8a93a6",maxTicksLimit:8}},
+      y:{grid:{color:"#252d3d"},ticks:{color:"#8a93a6",callback:v=>"₹"+v}}
+    }}
+  });
+
+  // positions
+  const pt = document.getElementById("posTable");
+  if(!s.positions || !s.positions.length){ pt.innerHTML = `<tr><td class="empty">No open positions.</td></tr>`; }
+  else{
+    pt.innerHTML = `<tr><th>Coin</th><th>Side</th><th>Entry</th><th>Mark</th><th>uPnL</th><th>ROI</th><th>Liq</th></tr>` +
+      s.positions.map(p=>`<tr>
+        <td>${sym(p.symbol)}</td>
+        <td><span class="pill ${p.side}">${p.side.toUpperCase()} ${p.leverage}x</span></td>
+        <td>${fmt(p.entry)}</td><td>${fmt(p.mark)}</td>
+        <td class="${cls(p.uPnl)}">${fmt(p.uPnl)}</td>
+        <td class="${cls(p.roi)}">${pct(p.roi)}</td>
+        <td>${fmt(p.liq)}</td></tr>`).join("");
+  }
+
+  // trades
+  const tt = document.getElementById("tradeTable");
+  if(!s.trades || !s.trades.length){ tt.innerHTML = `<tr><td class="empty">No trades yet.</td></tr>`; }
+  else{
+    tt.innerHTML = `<tr><th>Time</th><th>Action</th><th>Coin</th><th>Side</th><th>Price</th><th>P&L</th></tr>` +
+      s.trades.slice().reverse().map(t=>{
+        const tg = t.reason==="liquidation" ? "LIQ" : t.action;
+        const price = t.action==="OPEN" ? t.price : t.exit;
+        const pnl = t.action==="CLOSE" ? `<span class="${cls(t.pnl)}">${fmt(t.pnl)} (${pct(t.roi)})</span>` : "—";
+        return `<tr>
+          <td>${new Date(t.ts).toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit"})}</td>
+          <td><span class="tag ${tg}">${tg==="LIQ"?"💥 LIQ":t.action}</span></td>
+          <td>${sym(t.symbol)}</td>
+          <td>${(t.side||"").toUpperCase()}</td>
+          <td>${fmt(price)}</td>
+          <td>${pnl}</td></tr>`;
+      }).join("");
+  }
+}
+
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
