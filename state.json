@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-13T12:23:30.556Z",
+  "updatedAt": "2026-08-13T12:30:07.879Z",
   "accountName": "Vijay paper-trading (crypto leveraged futures test)",
   "leverage": 20,
   "startingCash": 10000,
-  "cash": 8384,
+  "cash": 7576,
   "realizedPnL": 0,
-  "equity": 9973.36883523305,
-  "pnl": -26.63116476694995,
-  "pnlPct": -0.2663116476694995,
-  "openCount": 2,
-  "tradeCount": 2,
+  "equity": 10028.963194275279,
+  "pnl": 28.96319427527851,
+  "pnlPct": 0.28963194275278514,
+  "openCount": 3,
+  "tradeCount": 3,
   "positions": [
     {
       "symbol": "TRXUSDT",
@@ -27,10 +27,21 @@
       "side": "long",
       "leverage": 20,
       "entry": 179674.6497,
-      "mark": 179673.6954,
-      "uPnl": -0.08498026864495654,
-      "roi": -0.010622533580619568,
+      "mark": 180285.40170000002,
+      "uPnl": 54.38737193208021,
+      "roi": 6.798421491510026,
       "liq": 171589.29046350002,
+      "notional": 16000
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "side": "long",
+      "leverage": 20,
+      "entry": 6.695368800000001,
+      "mark": 6.699186,
+      "uPnl": 9.12200684150372,
+      "roi": 1.140250855187965,
+      "liq": 6.394077204,
       "notional": 16000
     }
   ],
@@ -56,6 +67,17 @@
       "notional": 16000,
       "fee": 8,
       "coinQty": 0.08904984663509824
+    },
+    {
+      "ts": "2026-08-13T12:30:01.924Z",
+      "action": "OPEN",
+      "side": "long",
+      "symbol": "DOGEUSDT",
+      "price": 6.695368800000001,
+      "margin": 800,
+      "notional": 16000,
+      "fee": 8,
+      "coinQty": 2389.7115271678535
     }
   ],
   "equityHistory": [
@@ -94,6 +116,10 @@
     {
       "t": "2026-08-13T12:23:30.556Z",
       "equity": 9973.36883523305
+    },
+    {
+      "t": "2026-08-13T12:30:07.879Z",
+      "equity": 10028.963194275279
     }
   ]
 }
