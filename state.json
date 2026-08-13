@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T11:30:02.734Z",
+  "updatedAt": "2026-08-13T11:45:04.646Z",
   "accountName": "Vijay paper-trading (crypto leveraged futures test)",
   "leverage": 20,
   "startingCash": 10000,
@@ -35,6 +35,10 @@
     },
     {
       "t": "2026-08-13T11:30:02.734Z",
+      "equity": 10000
+    },
+    {
+      "t": "2026-08-13T11:45:04.646Z",
       "equity": 10000
     }
   ]
