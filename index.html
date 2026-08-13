@@ -32,6 +32,11 @@
   .tag.OPEN{background:rgba(76,141,255,.15);color:var(--accent)}
   .tag.CLOSE{background:rgba(138,147,166,.18);color:var(--muted)}
   .tag.LIQ{background:rgba(255,92,92,.2);color:var(--red)}
+  .badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;white-space:nowrap}
+  .badge.READY{background:rgba(40,199,111,.18);color:var(--green)}
+  .badge.PROMISING{background:rgba(230,200,76,.16);color:#e6c84c}
+  .badge.INCUBATING{background:rgba(76,141,255,.15);color:var(--accent)}
+  .badge.FAILING{background:rgba(255,92,92,.16);color:var(--red)}
   .empty{color:var(--muted);font-size:13px;padding:10px 4px}
   .wrap{overflow-x:auto}
   canvas{max-height:300px}
@@ -96,8 +101,10 @@ function render(s){
   document.getElementById("levTag").textContent = s.leverage ? `· ${s.leverage}x` : "";
   const d = new Date(s.updatedAt);
   document.getElementById("updated").textContent = "Updated " + d.toLocaleString("en-IN",{timeZone:"Asia/Kolkata"});
-  document.getElementById("subnote").textContent =
-    `${strats.length} strategies · ${fmt(s.startingCash)} each · ${s.marginPerTrade?fmt(s.marginPerTrade)+"/trade":""} · ${(s.symbols||[]).join(" ")}`;
+  const promo = s.promotion || {};
+  document.getElementById("subnote").innerHTML =
+    `${strats.length} strategies · ${fmt(s.startingCash)} each · ${s.marginPerTrade?fmt(s.marginPerTrade)+"/trade base":""} · ${(s.symbols||[]).join(" ")}` +
+    `<br><b>Promotion bar (→ real money):</b> ✅ ready needs ${promo.minClosedTrades||30}+ closed trades, ${promo.minDays||7}+ days, profit-factor ≥ ${promo.minProfitFactor||1.15}, Sharpe ≥ ${promo.minSharpe||1}, max drawdown ≤ ${promo.maxDrawdownPct||25}%. ${s.learning&&s.learning.enabled?"Alloc = adaptive bet-size (learning).":""}`;
 
   // ---- equity chart: one line per strategy, aligned on a shared time axis ----
   const stamps = new Set();
@@ -129,17 +136,23 @@ function render(s){
   });
 
   // ---- leaderboard ----
+  const BADGE = {READY:"✅ ready",PROMISING:"🟡 promising",INCUBATING:"⏳ incubating",FAILING:"❌ failing"};
+  const num = (v,d=2,suf="")=> v==null ? "—" : Number(v).toFixed(d)+suf;
   const lt = document.getElementById("leaderTable");
-  lt.innerHTML = `<tr><th>#</th><th>Strategy</th><th>Equity</th><th>P&L</th><th>Open</th><th>Trades</th><th>Win%</th></tr>` +
-    strats.map((st,i)=>`<tr>
+  lt.innerHTML = `<tr><th>#</th><th>Strategy</th><th>Status</th><th>Equity</th><th>P&L</th><th>Sharpe</th><th>Max DD</th><th>PF</th><th>Win%</th><th>Cl.Tr</th><th>Alloc</th></tr>` +
+    strats.map((st,i)=>{const m=st.metrics||{};return `<tr>
       <td class="rank">${["🥇","🥈","🥉"][i]||(i+1)}</td>
       <td>${st.name}</td>
+      <td><span class="badge ${st.status}">${BADGE[st.status]||st.status||"—"}</span></td>
       <td>${fmt(st.equity)}</td>
       <td class="${cls(st.pnl)}">${fmt(st.pnl)} (${pct(st.pnlPct)})</td>
-      <td>${st.openCount}</td>
-      <td>${st.tradeCount}</td>
-      <td>${st.winRate==null?"—":st.winRate.toFixed(0)+"%"}</td>
-    </tr>`).join("");
+      <td class="${m.sharpe==null?"":cls(m.sharpe)}">${num(m.sharpe,1)}</td>
+      <td class="red">${num(m.maxDrawdownPct,0,"%")}</td>
+      <td>${num(m.profitFactor,2)}</td>
+      <td>${num(st.winRate,0,"%")}</td>
+      <td>${m.closedTrades==null?"—":m.closedTrades}</td>
+      <td>${st.riskMult==null?"—":st.riskMult.toFixed(2)+"×"}</td>
+    </tr>`;}).join("");
 
   // ---- per-strategy detail (collapsible) ----
   document.getElementById("details").innerHTML = strats.map((st,i)=>{
@@ -177,7 +190,11 @@ function render(s){
         <span class="sstat"><span class="sbig ${cls(st.pnl)}">${fmt(st.equity)}</span> · ${pct(st.pnlPct)} · ${st.openCount} open</span>
       </summary>
       <div class="body">
-        <div class="sstat" style="margin:2px 0 10px">Free cash ${fmt(st.cash)} · realized ${fmt(st.realizedPnL)} · ${st.closedTrades||0} closed · win ${st.winRate==null?"—":st.winRate.toFixed(0)+"%"}</div>
+        <div class="sstat" style="margin:2px 0 6px">
+          <span class="badge ${st.status}">${BADGE[st.status]||st.status}</span>
+          &nbsp;Sharpe ${num((st.metrics||{}).sharpe,2)} · Sortino ${num((st.metrics||{}).sortino,2)} · MaxDD ${num((st.metrics||{}).maxDrawdownPct,0,"%")} · PF ${num((st.metrics||{}).profitFactor,2)} · expectancy ${(st.metrics||{}).expectancy==null?"—":fmt((st.metrics||{}).expectancy)}/trade
+        </div>
+        <div class="sstat" style="margin:0 0 10px">Free cash ${fmt(st.cash)} · realized ${fmt(st.realizedPnL)} · ${st.closedTrades||0} closed · alloc ${st.riskMult==null?"—":st.riskMult.toFixed(2)+"×"} · ${((st.metrics||{}).days||0).toFixed(1)}d live</div>
         ${pos}<div style="height:10px"></div>${tr}
       </div>
     </details>`;
