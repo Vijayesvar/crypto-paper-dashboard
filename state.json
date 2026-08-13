@@ -1,219 +1,490 @@
 {
-  "updatedAt": "2026-08-13T14:30:03.868Z",
-  "accountName": "Vijay paper-trading (crypto leveraged futures test)",
+  "updatedAt": "2026-08-13T14:41:48.027Z",
   "leverage": 20,
   "startingCash": 10000,
-  "cash": 5957.676168757128,
-  "realizedPnL": 5.676168757127636,
-  "equity": 10006.115236141688,
-  "pnl": 6.115236141688001,
-  "pnlPct": 0.06115236141688001,
-  "openCount": 5,
-  "tradeCount": 7,
-  "positions": [
-    {
-      "symbol": "TRXUSDT",
-      "side": "short",
-      "leverage": 20,
-      "entry": 31.851671100000004,
-      "mark": 31.9337409,
-      "uPnl": -41.22599394792608,
-      "roi": -5.15324924349076,
-      "liq": 33.2849962995,
-      "notional": 16000
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "long",
-      "leverage": 20,
-      "entry": 179674.6497,
-      "mark": 180414.2322,
-      "uPnl": 65.85970819900162,
-      "roi": 8.232463524875202,
-      "liq": 171589.29046350002,
-      "notional": 16000
-    },
-    {
-      "symbol": "BNBUSDT",
-      "side": "long",
-      "leverage": 20,
-      "entry": 58217.0715,
-      "mark": 58234.248900000006,
-      "uPnl": 4.720924514386201,
-      "roi": 0.5901155642982752,
-      "liq": 55597.3032825,
-      "notional": 16000
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "side": "short",
-      "leverage": 20,
-      "entry": 6.701094600000001,
-      "mark": 6.6858258,
-      "uPnl": 36.45684990031614,
-      "roi": 4.557106237539518,
-      "liq": 7.002643857000001,
-      "notional": 16000
-    },
-    {
-      "symbol": "ADAUSDT",
-      "side": "long",
-      "leverage": 20,
-      "entry": 17.578206,
-      "mark": 17.55912,
-      "uPnl": -17.372421281217424,
-      "roi": -2.171552660152178,
-      "liq": 16.787186730000002,
-      "notional": 16000
-    }
+  "marginPerTrade": 800,
+  "feeRate": 0.0005,
+  "symbols": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "DOGE",
+    "BNB",
+    "ADA",
+    "LTC",
+    "TRX"
   ],
-  "trades": [
+  "strategies": [
     {
-      "ts": "2026-08-13T12:00:03.915Z",
-      "action": "OPEN",
-      "side": "short",
-      "symbol": "TRXUSDT",
-      "price": 31.851671100000004,
-      "margin": 800,
-      "notional": 16000,
-      "fee": 8,
-      "coinQty": 502.32843199237976
+      "id": "breakout",
+      "name": "Donchian Volatility Breakout",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-13T14:41:46.825Z",
+          "equity": 10000
+        }
+      ]
     },
     {
-      "ts": "2026-08-13T12:23:28.482Z",
-      "action": "OPEN",
-      "side": "long",
-      "symbol": "ETHUSDT",
-      "price": 179674.6497,
-      "margin": 800,
-      "notional": 16000,
-      "fee": 8,
-      "coinQty": 0.08904984663509824
+      "id": "mean-reversion",
+      "name": "Bollinger Z-Score RSI Fade",
+      "equity": 9992,
+      "pnl": -8,
+      "pnlPct": -0.08,
+      "cash": 9192,
+      "realizedPnL": 0,
+      "openCount": 1,
+      "tradeCount": 1,
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [
+        {
+          "symbol": "SOLUSDT",
+          "side": "short",
+          "leverage": 20,
+          "entry": 7298.486400000001,
+          "mark": 7298.486400000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 7626.918288
+        }
+      ],
+      "trades": [
+        {
+          "ts": "2026-08-13T14:41:45.593Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOLUSDT",
+          "price": 7298.486400000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 2.192235365403983
+        }
+      ],
+      "equityHistory": [
+        {
+          "t": "2026-08-13T14:41:46.825Z",
+          "equity": 9992
+        }
+      ]
     },
     {
-      "ts": "2026-08-13T12:30:01.924Z",
-      "action": "OPEN",
-      "side": "long",
-      "symbol": "DOGEUSDT",
-      "price": 6.695368800000001,
-      "margin": 800,
-      "notional": 16000,
-      "fee": 8,
-      "coinQty": 2389.7115271678535
+      "id": "momentum-trend",
+      "name": "Momentum Trend Rider",
+      "equity": 9992,
+      "pnl": -8,
+      "pnlPct": -0.08,
+      "cash": 9192,
+      "realizedPnL": 0,
+      "openCount": 1,
+      "tradeCount": 1,
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [
+        {
+          "symbol": "ADAUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 17.673636000000002,
+          "mark": 17.673636000000002,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 16.87832238
+        }
+      ],
+      "trades": [
+        {
+          "ts": "2026-08-13T14:41:46.412Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "ADAUSDT",
+          "price": 17.673636000000002,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 905.3032437694201
+        }
+      ],
+      "equityHistory": [
+        {
+          "t": "2026-08-13T14:41:46.825Z",
+          "equity": 9992
+        }
+      ]
     },
     {
-      "ts": "2026-08-13T13:00:02.426Z",
-      "action": "OPEN",
-      "side": "long",
-      "symbol": "BNBUSDT",
-      "price": 58217.0715,
-      "margin": 800,
-      "notional": 16000,
-      "fee": 8,
-      "coinQty": 0.2748334738891839
+      "id": "macd-momentum",
+      "name": "MACD Momentum + Trend Filter",
+      "equity": 9952,
+      "pnl": -48,
+      "pnlPct": -0.48,
+      "cash": 5152,
+      "realizedPnL": 0,
+      "openCount": 6,
+      "tradeCount": 6,
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [
+        {
+          "symbol": "BTCUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 6102748.5,
+          "mark": 6102748.5,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 5828124.8175
+        },
+        {
+          "symbol": "ETHUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 180901.8795,
+          "mark": 180901.8795,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 172761.2949225
+        },
+        {
+          "symbol": "SOLUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 7298.486400000001,
+          "mark": 7298.486400000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 6970.054512000001
+        },
+        {
+          "symbol": "XRPUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 96.21252600000001,
+          "mark": 96.21252600000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 91.88296233000001
+        },
+        {
+          "symbol": "ADAUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 17.673636000000002,
+          "mark": 17.673636000000002,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 16.87832238
+        },
+        {
+          "symbol": "LTCUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 4282.898400000001,
+          "mark": 4282.898400000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 4090.1679720000006
+        }
+      ],
+      "trades": [
+        {
+          "ts": "2026-08-13T14:41:45.149Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "BTCUSDT",
+          "price": 6102748.5,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 0.0026217695190945524
+        },
+        {
+          "ts": "2026-08-13T14:41:45.397Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "ETHUSDT",
+          "price": 180901.8795,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 0.08844573668456551
+        },
+        {
+          "ts": "2026-08-13T14:41:45.592Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "SOLUSDT",
+          "price": 7298.486400000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 2.192235365403983
+        },
+        {
+          "ts": "2026-08-13T14:41:45.799Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "XRPUSDT",
+          "price": 96.21252600000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 166.29851293998868
+        },
+        {
+          "ts": "2026-08-13T14:41:46.412Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "ADAUSDT",
+          "price": 17.673636000000002,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 905.3032437694201
+        },
+        {
+          "ts": "2026-08-13T14:41:46.616Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "LTCUSDT",
+          "price": 4282.898400000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 3.735787895412134
+        }
+      ],
+      "equityHistory": [
+        {
+          "t": "2026-08-13T14:41:46.825Z",
+          "equity": 9952
+        }
+      ]
     },
     {
-      "ts": "2026-08-13T13:40:34.941Z",
-      "action": "CLOSE",
-      "reason": "signal",
-      "side": "long",
-      "symbol": "DOGEUSDT",
-      "entry": 6.695368800000001,
-      "exit": 6.701094600000001,
-      "pnl": 5.676168757127636,
-      "roi": 0.7095210946409545
-    },
-    {
-      "ts": "2026-08-13T13:40:35.577Z",
-      "action": "OPEN",
-      "side": "short",
-      "symbol": "DOGEUSDT",
-      "price": 6.701094600000001,
-      "margin": 800,
-      "notional": 16000,
-      "fee": 8,
-      "coinQty": 2387.669620422908
-    },
-    {
-      "ts": "2026-08-13T13:40:35.977Z",
-      "action": "OPEN",
-      "side": "long",
-      "symbol": "ADAUSDT",
-      "price": 17.578206,
-      "margin": 800,
-      "notional": 16000,
-      "fee": 8,
-      "coinQty": 910.2180279375494
-    }
-  ],
-  "equityHistory": [
-    {
-      "t": "2026-08-13T16:17:00+05:30",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T10:51:47.110Z",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T10:52:09.955Z",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T11:00:03.783Z",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T11:15:02.425Z",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T11:30:02.734Z",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T11:45:04.646Z",
-      "equity": 10000
-    },
-    {
-      "t": "2026-08-13T12:00:05.118Z",
-      "equity": 9992
-    },
-    {
-      "t": "2026-08-13T12:23:30.556Z",
-      "equity": 9973.36883523305
-    },
-    {
-      "t": "2026-08-13T12:30:07.879Z",
-      "equity": 10028.963194275279
-    },
-    {
-      "t": "2026-08-13T12:45:04.107Z",
-      "equity": 9980.064891972756
-    },
-    {
-      "t": "2026-08-13T13:00:04.945Z",
-      "equity": 10009.703388056205
-    },
-    {
-      "t": "2026-08-13T13:15:03.622Z",
-      "equity": 10012.932802377314
-    },
-    {
-      "t": "2026-08-13T13:40:38.156Z",
-      "equity": 10067.622208507693
-    },
-    {
-      "t": "2026-08-13T14:12:23.693Z",
-      "equity": 9957.676168757127
-    },
-    {
-      "t": "2026-08-13T14:15:03.620Z",
-      "equity": 10082.15079685839
-    },
-    {
-      "t": "2026-08-13T14:30:03.868Z",
-      "equity": 10006.115236141688
+      "id": "baseline-sma",
+      "name": "Baseline · 9/21 SMA",
+      "equity": 9928,
+      "pnl": -72,
+      "pnlPct": -0.72,
+      "cash": 2728,
+      "realizedPnL": 0,
+      "openCount": 9,
+      "tradeCount": 9,
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [
+        {
+          "symbol": "BTCUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 6102748.5,
+          "mark": 6102748.5,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 5828124.8175
+        },
+        {
+          "symbol": "ETHUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 180901.8795,
+          "mark": 180901.8795,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 172761.2949225
+        },
+        {
+          "symbol": "SOLUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 7298.486400000001,
+          "mark": 7298.486400000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 6970.054512000001
+        },
+        {
+          "symbol": "XRPUSDT",
+          "side": "short",
+          "leverage": 20,
+          "entry": 96.21252600000001,
+          "mark": 96.21252600000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 100.54208967000001
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "side": "short",
+          "leverage": 20,
+          "entry": 6.698231700000001,
+          "mark": 6.698231700000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 6.999652126500001
+        },
+        {
+          "symbol": "BNBUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 58315.364400000006,
+          "mark": 58315.364400000006,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 55691.173002
+        },
+        {
+          "symbol": "ADAUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 17.673636000000002,
+          "mark": 17.673636000000002,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 16.87832238
+        },
+        {
+          "symbol": "LTCUSDT",
+          "side": "short",
+          "leverage": 20,
+          "entry": 4282.898400000001,
+          "mark": 4282.898400000001,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 4475.628828000001
+        },
+        {
+          "symbol": "TRXUSDT",
+          "side": "long",
+          "leverage": 20,
+          "entry": 31.9394667,
+          "mark": 31.9394667,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 30.502190698499998
+        }
+      ],
+      "trades": [
+        {
+          "ts": "2026-08-13T14:41:45.085Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "BTCUSDT",
+          "price": 6102748.5,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 0.0026217695190945524
+        },
+        {
+          "ts": "2026-08-13T14:41:45.388Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "ETHUSDT",
+          "price": 180901.8795,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 0.08844573668456551
+        },
+        {
+          "ts": "2026-08-13T14:41:45.591Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "SOLUSDT",
+          "price": 7298.486400000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 2.192235365403983
+        },
+        {
+          "ts": "2026-08-13T14:41:45.797Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "XRPUSDT",
+          "price": 96.21252600000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 166.29851293998868
+        },
+        {
+          "ts": "2026-08-13T14:41:46.001Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "DOGEUSDT",
+          "price": 6.698231700000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 2388.6901374283602
+        },
+        {
+          "ts": "2026-08-13T14:41:46.206Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "BNBUSDT",
+          "price": 58315.364400000006,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 0.27437023097809876
+        },
+        {
+          "ts": "2026-08-13T14:41:46.410Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "ADAUSDT",
+          "price": 17.673636000000002,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 905.3032437694201
+        },
+        {
+          "ts": "2026-08-13T14:41:46.615Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "LTCUSDT",
+          "price": 4282.898400000001,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 3.735787895412134
+        },
+        {
+          "ts": "2026-08-13T14:41:46.824Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "TRXUSDT",
+          "price": 31.9394667,
+          "margin": 800,
+          "notional": 16000,
+          "fee": 8,
+          "coinQty": 500.94762540290003
+        }
+      ],
+      "equityHistory": [
+        {
+          "t": "2026-08-13T14:41:46.825Z",
+          "equity": 9928
+        }
+      ]
     }
   ]
 }
