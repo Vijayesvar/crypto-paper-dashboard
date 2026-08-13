@@ -1,17 +1,41 @@
 {
-  "updatedAt": "2026-08-13T11:45:04.646Z",
+  "updatedAt": "2026-08-13T12:00:05.118Z",
   "accountName": "Vijay paper-trading (crypto leveraged futures test)",
   "leverage": 20,
   "startingCash": 10000,
-  "cash": 10000,
+  "cash": 9192,
   "realizedPnL": 0,
-  "equity": 10000,
-  "pnl": 0,
-  "pnlPct": 0,
-  "openCount": 0,
-  "tradeCount": 0,
-  "positions": [],
-  "trades": [],
+  "equity": 9992,
+  "pnl": -8,
+  "pnlPct": -0.08,
+  "openCount": 1,
+  "tradeCount": 1,
+  "positions": [
+    {
+      "symbol": "TRXUSDT",
+      "side": "short",
+      "leverage": 20,
+      "entry": 31.851671100000004,
+      "mark": 31.851671100000004,
+      "uPnl": 0,
+      "roi": 0,
+      "liq": 33.2849962995,
+      "notional": 16000
+    }
+  ],
+  "trades": [
+    {
+      "ts": "2026-08-13T12:00:03.915Z",
+      "action": "OPEN",
+      "side": "short",
+      "symbol": "TRXUSDT",
+      "price": 31.851671100000004,
+      "margin": 800,
+      "notional": 16000,
+      "fee": 8,
+      "coinQty": 502.32843199237976
+    }
+  ],
   "equityHistory": [
     {
       "t": "2026-08-13T16:17:00+05:30",
@@ -40,6 +64,10 @@
     {
       "t": "2026-08-13T11:45:04.646Z",
       "equity": 10000
+    },
+    {
+      "t": "2026-08-13T12:00:05.118Z",
+      "equity": 9992
     }
   ]
 }
