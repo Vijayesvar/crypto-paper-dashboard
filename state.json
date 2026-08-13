@@ -1,25 +1,36 @@
 {
-  "updatedAt": "2026-08-13T12:00:05.118Z",
+  "updatedAt": "2026-08-13T12:23:30.556Z",
   "accountName": "Vijay paper-trading (crypto leveraged futures test)",
   "leverage": 20,
   "startingCash": 10000,
-  "cash": 9192,
+  "cash": 8384,
   "realizedPnL": 0,
-  "equity": 9992,
-  "pnl": -8,
-  "pnlPct": -0.08,
-  "openCount": 1,
-  "tradeCount": 1,
+  "equity": 9973.36883523305,
+  "pnl": -26.63116476694995,
+  "pnlPct": -0.2663116476694995,
+  "openCount": 2,
+  "tradeCount": 2,
   "positions": [
     {
       "symbol": "TRXUSDT",
       "side": "short",
       "leverage": 20,
       "entry": 31.851671100000004,
-      "mark": 31.851671100000004,
-      "uPnl": 0,
-      "roi": 0,
+      "mark": 31.872665700000002,
+      "uPnl": -10.546184498306255,
+      "roi": -1.318273062288282,
       "liq": 33.2849962995,
+      "notional": 16000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "long",
+      "leverage": 20,
+      "entry": 179674.6497,
+      "mark": 179673.6954,
+      "uPnl": -0.08498026864495654,
+      "roi": -0.010622533580619568,
+      "liq": 171589.29046350002,
       "notional": 16000
     }
   ],
@@ -34,6 +45,17 @@
       "notional": 16000,
       "fee": 8,
       "coinQty": 502.32843199237976
+    },
+    {
+      "ts": "2026-08-13T12:23:28.482Z",
+      "action": "OPEN",
+      "side": "long",
+      "symbol": "ETHUSDT",
+      "price": 179674.6497,
+      "margin": 800,
+      "notional": 16000,
+      "fee": 8,
+      "coinQty": 0.08904984663509824
     }
   ],
   "equityHistory": [
@@ -68,6 +90,10 @@
     {
       "t": "2026-08-13T12:00:05.118Z",
       "equity": 9992
+    },
+    {
+      "t": "2026-08-13T12:23:30.556Z",
+      "equity": 9973.36883523305
     }
   ]
 }
