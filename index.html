@@ -61,7 +61,7 @@
 <p class="note" id="subnote"></p>
 
 <div class="panel">
-  <h2>Equity curves — each strategy, its own ₹ book</h2>
+  <h2>Equity curves — each strategy, its own $ book</h2>
   <div class="legend" id="legend"></div>
   <canvas id="equityChart"></canvas>
 </div>
@@ -77,13 +77,15 @@
 </div>
 
 <footer>
-  Paper money · real Binance-futures prices · 5 strategies compete on identical capital.<br>
-  Indicator strategies, not proven edge — this measures signal, not a promise. Not financial advice. Auto-refreshes every 60s.
+  Paper money · real Hyperliquid perp prices (USD) · 20 strategies compete on identical capital.<br>
+  Indicator strategies, not proven edge — this measures signal, not a promise. With 20 books the odds one looks good by luck are high; the promotion gate exists to catch that. Not financial advice. Auto-refreshes every 60s.
 </footer>
 
 <script>
-const PALETTE = ["#4c8dff","#28c76f","#ff9f43","#a66bff","#ff5c5c","#25d0d0","#e6c84c"];
-const fmt = n => "₹" + Number(n).toLocaleString("en-IN",{maximumFractionDigits:2});
+const PALETTE = ["#4c8dff","#28c76f","#ff9f43","#a66bff","#ff5c5c","#25d0d0","#e6c84c",
+  "#ff6fb5","#7ee787","#f0883e","#6cb6ff","#d2a8ff","#ffab70","#39d353","#db61a2",
+  "#58a6ff","#f778ba","#3fb950","#e3b341","#a5d6ff"];
+const fmt = n => "$" + Number(n).toLocaleString("en-US",{maximumFractionDigits:2});
 const pct = n => (n>=0?"+":"") + Number(n).toFixed(2) + "%";
 const cls = n => n>=0 ? "green" : "red";
 const symf = s => s.replace("USDT","");
@@ -130,7 +132,7 @@ function render(s){
       interaction:{mode:"index",intersect:false},
       scales:{
         x:{grid:{color:"#252d3d"},ticks:{color:"#8a93a6",maxTicksLimit:8}},
-        y:{grid:{color:"#252d3d"},ticks:{color:"#8a93a6",callback:v=>"₹"+v}}
+        y:{grid:{color:"#252d3d"},ticks:{color:"#8a93a6",callback:v=>"$"+v}}
       }
     }
   });
