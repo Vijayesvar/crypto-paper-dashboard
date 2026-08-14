@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T03:45:05.769Z",
+  "updatedAt": "2026-08-14T04:00:06.063Z",
   "leverage": 3,
   "startingCash": 10000,
   "marginPerTrade": 800,
@@ -31,556 +31,40 @@
   },
   "strategies": [
     {
-      "id": "bb-squeeze-breakout",
-      "name": "BB Squeeze Breakout",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "breakout",
-      "name": "Donchian Volatility Breakout",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "keltner-breakout",
-      "name": "Keltner Breakout",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "mean-reversion",
-      "name": "Bollinger Z-Score RSI Fade",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "mean-reversion-v2",
-      "name": "Bollinger Fade v2 (deep + stop)",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "momentum-trend",
-      "name": "Momentum Trend Rider",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "roc-momentum",
-      "name": "ROC Momentum",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "rsi-reversal",
-      "name": "RSI Reversal 30/70",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "supertrend",
-      "name": "SuperTrend ATR",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "volume-surge",
-      "name": "Volume Surge",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
-      "id": "vwap-reversion",
-      "name": "VWAP Reversion",
-      "equity": 10000,
-      "pnl": 0,
-      "pnlPct": 0,
-      "cash": 10000,
-      "realizedPnL": 0,
-      "openCount": 0,
-      "tradeCount": 0,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 0,
-        "winRate": null,
-        "expectancy": null,
-        "profitFactor": null,
-        "totalReturnPct": 0,
-        "maxDrawdownPct": 0,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "INCUBATING",
-      "closedTrades": 0,
-      "winRate": null,
-      "positions": [],
-      "trades": [],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 10000
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 10000
-        }
-      ]
-    },
-    {
       "id": "williams-r",
       "name": "Williams %R",
-      "equity": 9999.326409583175,
-      "pnl": -0.673590416825391,
-      "pnlPct": -0.00673590416825391,
-      "cash": 8395.915285275061,
-      "realizedPnL": 0.7152852750618239,
-      "openCount": 2,
-      "tradeCount": 6,
+      "equity": 10003.146209575443,
+      "pnl": 3.1462095754432085,
+      "pnlPct": 0.03146209575443208,
+      "cash": 9201.184784273057,
+      "realizedPnL": 5.984784273057554,
+      "openCount": 1,
+      "tradeCount": 7,
       "riskMult": 1,
       "metrics": {
-        "closedTrades": 2,
-        "winRate": 50,
-        "expectancy": 0.35764263753091197,
-        "profitFactor": 2.0257981392493485,
-        "totalReturnPct": -0.00673590416825391,
+        "closedTrades": 3,
+        "winRate": 66.66666666666666,
+        "expectancy": 1.9949280910191847,
+        "profitFactor": 9.582842098323049,
+        "totalReturnPct": 0.03146209575443208,
         "maxDrawdownPct": 0.030588019337286533,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "INCUBATING",
-      "closedTrades": 2,
-      "winRate": 50,
+      "closedTrades": 3,
+      "winRate": 66.66666666666666,
       "positions": [
         {
           "symbol": "BNB",
           "side": "short",
           "leverage": 3,
           "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": 1.6475972540044164,
-          "roi": 0.20594965675055205,
+          "mark": 611.3,
+          "uPnl": 1.961425302386401,
+          "roi": 0.24517816279830013,
           "liq": 812.6743333333333
-        },
-        {
-          "symbol": "LTC",
-          "side": "short",
-          "leverage": 3,
-          "entry": 44.91,
-          "mark": 44.877,
-          "uPnl": 1.7635270541079036,
-          "roi": 0.22044088176348797,
-          "liq": 59.655449999999995
         }
       ],
       "trades": [
@@ -649,6 +133,17 @@
           "exit": 1.0099,
           "pnl": 1.4125816023735993,
           "roi": 0.1765727002966999
+        },
+        {
+          "ts": "2026-08-14T04:00:03.821Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "short",
+          "symbol": "LTC",
+          "entry": 44.91,
+          "exit": 44.789,
+          "pnl": 5.26949899799573,
+          "roi": 0.6586873747494663
         }
       ],
       "equityHistory": [
@@ -667,15 +162,569 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9999.326409583175
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10003.146209575443
+        }
+      ]
+    },
+    {
+      "id": "bb-squeeze-breakout",
+      "name": "BB Squeeze Breakout",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "breakout",
+      "name": "Donchian Volatility Breakout",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "keltner-breakout",
+      "name": "Keltner Breakout",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "mean-reversion",
+      "name": "Bollinger Z-Score RSI Fade",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "mean-reversion-v2",
+      "name": "Bollinger Fade v2 (deep + stop)",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "momentum-trend",
+      "name": "Momentum Trend Rider",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "roc-momentum",
+      "name": "ROC Momentum",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "rsi-reversal",
+      "name": "RSI Reversal 30/70",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "supertrend",
+      "name": "SuperTrend ATR",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "volume-surge",
+      "name": "Volume Surge",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
+        }
+      ]
+    },
+    {
+      "id": "vwap-reversion",
+      "name": "VWAP Reversion",
+      "equity": 10000,
+      "pnl": 0,
+      "pnlPct": 0,
+      "cash": 10000,
+      "realizedPnL": 0,
+      "openCount": 0,
+      "tradeCount": 0,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 0,
+        "winRate": null,
+        "expectancy": null,
+        "profitFactor": null,
+        "totalReturnPct": 0,
+        "maxDrawdownPct": 0,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "INCUBATING",
+      "closedTrades": 0,
+      "winRate": null,
+      "positions": [],
+      "trades": [],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 10000
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 10000
         }
       ]
     },
     {
       "id": "stochastic-cross",
       "name": "Stochastic 14/3",
-      "equity": 9997.933717398348,
-      "pnl": -2.066282601652347,
-      "pnlPct": -0.020662826016523465,
+      "equity": 9998.2475505764,
+      "pnl": -1.7524494236004102,
+      "pnlPct": -0.0175244942360041,
       "cash": 9196.325322360835,
       "realizedPnL": -0.07467763916235826,
       "openCount": 1,
@@ -686,11 +735,11 @@
         "winRate": 50,
         "expectancy": -0.03733881958117913,
         "profitFactor": 0.949788418133993,
-        "totalReturnPct": -0.020662826016523465,
+        "totalReturnPct": -0.0175244942360041,
         "maxDrawdownPct": 0.03887725768629558,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "FAILING",
       "closedTrades": 2,
@@ -701,9 +750,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 611.79,
-          "mark": 611.38,
-          "uPnl": 1.6083950375127474,
-          "roi": 0.20104937968909342,
+          "mark": 611.3,
+          "uPnl": 1.9222282155641999,
+          "roi": 0.24027852694552498,
           "liq": 812.6610499999999
         }
       ],
@@ -780,262 +829,19 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9997.933717398348
-        }
-      ]
-    },
-    {
-      "id": "cci-trend",
-      "name": "CCI ±100",
-      "equity": 9992.989699490512,
-      "pnl": -7.010300509487934,
-      "pnlPct": -0.07010300509487934,
-      "cash": 9194.75322654462,
-      "realizedPnL": -2.846773455377414,
-      "openCount": 1,
-      "tradeCount": 3,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 1,
-        "winRate": 0,
-        "expectancy": -2.846773455377414,
-        "profitFactor": 0,
-        "totalReturnPct": -0.07010300509487934,
-        "maxDrawdownPct": 0.058109978292267134,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "FAILING",
-      "closedTrades": 1,
-      "winRate": 0,
-      "positions": [
-        {
-          "symbol": "LTC",
-          "side": "long",
-          "leverage": 3,
-          "entry": 44.91,
-          "mark": 44.877,
-          "uPnl": -1.7635270541079036,
-          "roi": -0.22044088176348797,
-          "liq": 30.164549999999995
-        }
-      ],
-      "trades": [
-        {
-          "ts": "2026-08-14T03:11:39.763Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "BNB",
-          "price": 611.8,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 3.922850604772802
         },
         {
-          "ts": "2026-08-14T03:30:02.830Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "LTC",
-          "price": 44.91,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 53.440213760855045
-        },
-        {
-          "ts": "2026-08-14T03:45:02.907Z",
-          "action": "CLOSE",
-          "reason": "signal",
-          "side": "long",
-          "symbol": "BNB",
-          "entry": 611.8,
-          "exit": 611.38,
-          "pnl": -2.846773455377414,
-          "roi": -0.3558466819221768
-        }
-      ],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 9998.8
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 9998.682314481855
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 9997.56077149395
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 9992.989699490512
-        }
-      ]
-    },
-    {
-      "id": "macd-momentum",
-      "name": "MACD Momentum + Trend Filter",
-      "equity": 9982.20953112587,
-      "pnl": -17.790468874129147,
-      "pnlPct": -0.17790468874129148,
-      "cash": 8383.857128379876,
-      "realizedPnL": -10.14287162012375,
-      "openCount": 2,
-      "tradeCount": 8,
-      "riskMult": 1,
-      "metrics": {
-        "closedTrades": 3,
-        "winRate": 0,
-        "expectancy": -3.3809572067079166,
-        "profitFactor": 0,
-        "totalReturnPct": -0.17790468874129148,
-        "maxDrawdownPct": 0.12996707293628998,
-        "sharpe": null,
-        "sortino": null,
-        "days": 0.023191261574074074
-      },
-      "status": "FAILING",
-      "closedTrades": 3,
-      "winRate": 0,
-      "positions": [
-        {
-          "symbol": "BNB",
-          "side": "long",
-          "leverage": 3,
-          "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": -1.6475972540044164,
-          "roi": -0.20594965675055205,
-          "liq": 410.92566666666664
-        },
-        {
-          "symbol": "SOL",
-          "side": "short",
-          "leverage": 3,
-          "entry": 75.814,
-          "mark": 75.814,
-          "uPnl": 0,
-          "roi": 0,
-          "liq": 100.70626333333333
-        }
-      ],
-      "trades": [
-        {
-          "ts": "2026-08-14T03:11:39.164Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "SOL",
-          "price": 75.791,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 31.66602894802813
-        },
-        {
-          "ts": "2026-08-14T03:11:39.764Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "BNB",
-          "price": 611.8,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 3.922850604772802
-        },
-        {
-          "ts": "2026-08-14T03:11:40.260Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "TRX",
-          "price": 0.33436,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 7177.892092355545
-        },
-        {
-          "ts": "2026-08-14T03:11:40.574Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "AVAX",
-          "price": 6.426,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 373.4827264239029
-        },
-        {
-          "ts": "2026-08-14T03:15:01.121Z",
-          "action": "CLOSE",
-          "reason": "signal",
-          "side": "short",
-          "symbol": "SOL",
-          "entry": 75.791,
-          "exit": 75.885,
-          "pnl": -4.178095024475464,
-          "roi": -0.522261878059433
-        },
-        {
-          "ts": "2026-08-14T03:15:02.195Z",
-          "action": "CLOSE",
-          "reason": "signal",
-          "side": "short",
-          "symbol": "AVAX",
-          "entry": 6.426,
-          "exit": 6.4317,
-          "pnl": -3.3299159663865687,
-          "roi": -0.4162394957983211
-        },
-        {
-          "ts": "2026-08-14T03:45:02.182Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "SOL",
-          "price": 75.814,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 31.65642229667344
-        },
-        {
-          "ts": "2026-08-14T03:45:03.717Z",
-          "action": "CLOSE",
-          "reason": "signal",
-          "side": "long",
-          "symbol": "TRX",
-          "entry": 0.33436,
-          "exit": 0.33416,
-          "pnl": -2.6348606292617154,
-          "roi": -0.3293575786577144
-        }
-      ],
-      "equityHistory": [
-        {
-          "t": "2026-08-14T03:11:41.119Z",
-          "equity": 9995.199999999999
-        },
-        {
-          "t": "2026-08-14T03:15:02.588Z",
-          "equity": 9987.861419174687
-        },
-        {
-          "t": "2026-08-14T03:30:04.134Z",
-          "equity": 9987.150308056625
-        },
-        {
-          "t": "2026-08-14T03:45:04.844Z",
-          "equity": 9982.20953112587
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9998.2475505764
         }
       ]
     },
     {
       "id": "baseline-sma",
       "name": "Baseline · 9/21 SMA",
-      "equity": 9980.859021249726,
-      "pnl": -19.14097875027437,
-      "pnlPct": -0.1914097875027437,
+      "equity": 9988.880026031984,
+      "pnl": -11.119973968015984,
+      "pnlPct": -0.11119973968015982,
       "cash": 385.5999999999997,
       "realizedPnL": 0,
       "openCount": 12,
@@ -1046,11 +852,11 @@
         "winRate": null,
         "expectancy": null,
         "profitFactor": null,
-        "totalReturnPct": -0.1914097875027437,
+        "totalReturnPct": -0.11119973968015982,
         "maxDrawdownPct": 0.17147997983629504,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "INCUBATING",
       "closedTrades": 0,
@@ -1061,9 +867,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 63449,
-          "mark": 63379,
-          "uPnl": 2.647795867547164,
-          "roi": 0.3309744834433955,
+          "mark": 63319,
+          "uPnl": 4.91733518258759,
+          "roi": 0.6146668978234487,
           "liq": 84281.42166666666
         },
         {
@@ -1071,9 +877,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 1883.3,
-          "mark": 1884.1,
-          "uPnl": 1.0194870705675627,
-          "roi": 0.12743588382094534,
+          "mark": 1882,
+          "uPnl": -1.6566664896723258,
+          "roi": -0.2070833112090407,
           "liq": 1264.9498333333333
         },
         {
@@ -1081,9 +887,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 75.791,
-          "mark": 75.814,
-          "uPnl": 0.7283186658045246,
-          "roi": 0.09103983322556558,
+          "mark": 75.735,
+          "uPnl": -1.7732976210894926,
+          "roi": -0.2216622026361866,
           "liq": 50.90628833333333
         },
         {
@@ -1091,9 +897,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 1.0093,
-          "mark": 1.0099,
-          "uPnl": 1.4267313979984555,
-          "roi": 0.17834142474980694,
+          "mark": 1.0093,
+          "uPnl": 0,
+          "roi": 0,
           "liq": 0.6779131666666667
         },
         {
@@ -1101,9 +907,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 0.069968,
-          "mark": 0.06994,
-          "uPnl": -0.9604390578550278,
-          "roi": -0.12005488223187848,
+          "mark": 0.069928,
+          "uPnl": -1.3720557969356861,
+          "roi": -0.17150697461696077,
           "liq": 0.046995173333333334
         },
         {
@@ -1111,9 +917,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": -1.6475972540044164,
-          "roi": -0.20594965675055205,
+          "mark": 611.3,
+          "uPnl": -1.961425302386401,
+          "roi": -0.24517816279830013,
           "liq": 410.92566666666664
         },
         {
@@ -1121,9 +927,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.1818,
-          "mark": 0.18254,
-          "uPnl": -9.768976897690013,
-          "roi": -1.2211221122112517,
+          "mark": 0.18223,
+          "uPnl": -5.676567656765858,
+          "roi": -0.7095709570957323,
           "liq": 0.24149099999999998
         },
         {
@@ -1131,9 +937,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 44.824,
-          "mark": 44.877,
-          "uPnl": -2.837765482777318,
-          "roi": -0.3547206853471648,
+          "mark": 44.789,
+          "uPnl": 1.873996073531854,
+          "roi": 0.23424950919148174,
           "liq": 59.54121333333333
         },
         {
@@ -1141,9 +947,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.33436,
-          "mark": 0.33416,
-          "uPnl": 1.435578418470951,
-          "roi": 0.17944730230886888,
+          "mark": 0.33381,
+          "uPnl": 3.9478406507955137,
+          "roi": 0.4934800813494392,
           "liq": 0.44414153333333334
         },
         {
@@ -1151,9 +957,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 6.426,
-          "mark": 6.4288,
-          "uPnl": -1.045751633986813,
-          "roi": -0.13071895424835162,
+          "mark": 6.4117,
+          "uPnl": 5.340802987861969,
+          "roi": 0.6676003734827461,
           "liq": 8.535870000000001
         },
         {
@@ -1161,9 +967,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 8.8166,
-          "mark": 8.8299,
-          "uPnl": 3.6204432547696785,
-          "roi": 0.4525554068462098,
+          "mark": 8.8141,
+          "uPnl": -0.6805344463850925,
+          "roi": -0.08506680579813657,
           "liq": 5.921816333333332
         },
         {
@@ -1171,9 +977,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 0.07486,
-          "mark": 0.07488,
-          "uPnl": 0.6411969008818421,
-          "roi": 0.08014961261023026,
+          "mark": 0.07487,
+          "uPnl": 0.3205984504411435,
+          "roi": 0.040074806305142936,
           "liq": 0.05028096666666666
         }
       ],
@@ -1327,33 +1133,356 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9980.859021249726
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9988.880026031984
+        }
+      ]
+    },
+    {
+      "id": "cci-trend",
+      "name": "CCI ±100",
+      "equity": 9987.09019381249,
+      "pnl": -12.909806187510185,
+      "pnlPct": -0.12909806187510184,
+      "cash": 9987.09019381249,
+      "realizedPnL": -10.509806187508081,
+      "openCount": 0,
+      "tradeCount": 4,
+      "riskMult": 1,
+      "metrics": {
+        "closedTrades": 2,
+        "winRate": 0,
+        "expectancy": -5.254903093754041,
+        "profitFactor": 0,
+        "totalReturnPct": -0.12909806187510184,
+        "maxDrawdownPct": 0.11711211532893405,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "FAILING",
+      "closedTrades": 2,
+      "winRate": 0,
+      "positions": [],
+      "trades": [
+        {
+          "ts": "2026-08-14T03:11:39.763Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "BNB",
+          "price": 611.8,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 3.922850604772802
+        },
+        {
+          "ts": "2026-08-14T03:30:02.830Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "LTC",
+          "price": 44.91,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 53.440213760855045
+        },
+        {
+          "ts": "2026-08-14T03:45:02.907Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "BNB",
+          "entry": 611.8,
+          "exit": 611.38,
+          "pnl": -2.846773455377414,
+          "roi": -0.3558466819221768
+        },
+        {
+          "ts": "2026-08-14T04:00:03.810Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "LTC",
+          "entry": 44.91,
+          "exit": 44.789,
+          "pnl": -7.6630327321306675,
+          "roi": -0.9578790915163334
+        }
+      ],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 9998.8
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 9998.682314481855
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 9997.56077149395
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 9992.989699490512
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9987.09019381249
+        }
+      ]
+    },
+    {
+      "id": "macd-momentum",
+      "name": "MACD Momentum + Trend Filter",
+      "equity": 9979.672133151576,
+      "pnl": -20.327866848423582,
+      "pnlPct": -0.2032786684842358,
+      "cash": 6826.899275790141,
+      "realizedPnL": -13.303316209858957,
+      "openCount": 4,
+      "tradeCount": 12,
+      "riskMult": 0.97928,
+      "metrics": {
+        "closedTrades": 4,
+        "winRate": 0,
+        "expectancy": -3.3258290524647394,
+        "profitFactor": 0,
+        "totalReturnPct": -0.2032786684842358,
+        "maxDrawdownPct": 0.1553532380384834,
+        "sharpe": null,
+        "sortino": null,
+        "days": 0.03361196759259259
+      },
+      "status": "FAILING",
+      "closedTrades": 4,
+      "winRate": 0,
+      "positions": [
+        {
+          "symbol": "SOL",
+          "side": "short",
+          "leverage": 3,
+          "entry": 75.814,
+          "mark": 75.735,
+          "uPnl": 2.5008573614369967,
+          "roi": 0.3126071701796246,
+          "liq": 100.70626333333333
+        },
+        {
+          "symbol": "BTC",
+          "side": "short",
+          "leverage": 3,
+          "entry": 63319,
+          "mark": 63319,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 84108.73833333334
+        },
+        {
+          "symbol": "ETH",
+          "side": "short",
+          "leverage": 3,
+          "entry": 1882,
+          "mark": 1882,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 2499.923333333333
+        },
+        {
+          "symbol": "AVAX",
+          "side": "short",
+          "leverage": 3,
+          "entry": 6.4117,
+          "mark": 6.4117,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 8.516874833333333
+        }
+      ],
+      "trades": [
+        {
+          "ts": "2026-08-14T03:11:39.164Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOL",
+          "price": 75.791,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 31.66602894802813
+        },
+        {
+          "ts": "2026-08-14T03:11:39.764Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "BNB",
+          "price": 611.8,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 3.922850604772802
+        },
+        {
+          "ts": "2026-08-14T03:11:40.260Z",
+          "action": "OPEN",
+          "side": "long",
+          "symbol": "TRX",
+          "price": 0.33436,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 7177.892092355545
+        },
+        {
+          "ts": "2026-08-14T03:11:40.574Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "AVAX",
+          "price": 6.426,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 373.4827264239029
+        },
+        {
+          "ts": "2026-08-14T03:15:01.121Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "short",
+          "symbol": "SOL",
+          "entry": 75.791,
+          "exit": 75.885,
+          "pnl": -4.178095024475464,
+          "roi": -0.522261878059433
+        },
+        {
+          "ts": "2026-08-14T03:15:02.195Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "short",
+          "symbol": "AVAX",
+          "entry": 6.426,
+          "exit": 6.4317,
+          "pnl": -3.3299159663865687,
+          "roi": -0.4162394957983211
+        },
+        {
+          "ts": "2026-08-14T03:45:02.182Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOL",
+          "price": 75.814,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 31.65642229667344
+        },
+        {
+          "ts": "2026-08-14T03:45:03.717Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "TRX",
+          "entry": 0.33436,
+          "exit": 0.33416,
+          "pnl": -2.6348606292617154,
+          "roi": -0.3293575786577144
+        },
+        {
+          "ts": "2026-08-14T04:00:00.962Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "BTC",
+          "price": 63319,
+          "margin": 783.424,
+          "notional": 2350.272,
+          "fee": 1.175136,
+          "coinQty": 0.037117958274767444
+        },
+        {
+          "ts": "2026-08-14T04:00:01.560Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "ETH",
+          "price": 1882,
+          "margin": 783.424,
+          "notional": 2350.272,
+          "fee": 1.175136,
+          "coinQty": 1.2488161530286928
+        },
+        {
+          "ts": "2026-08-14T04:00:02.787Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "BNB",
+          "entry": 611.8,
+          "exit": 611.3,
+          "pnl": -3.160444589735208,
+          "roi": -0.395055573716901
+        },
+        {
+          "ts": "2026-08-14T04:00:04.527Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "AVAX",
+          "price": 6.4117,
+          "margin": 783.424,
+          "notional": 2350.272,
+          "fee": 1.175136,
+          "coinQty": 366.5598827144127
+        }
+      ],
+      "equityHistory": [
+        {
+          "t": "2026-08-14T03:11:41.119Z",
+          "equity": 9995.199999999999
+        },
+        {
+          "t": "2026-08-14T03:15:02.588Z",
+          "equity": 9987.861419174687
+        },
+        {
+          "t": "2026-08-14T03:30:04.134Z",
+          "equity": 9987.150308056625
+        },
+        {
+          "t": "2026-08-14T03:45:04.844Z",
+          "equity": 9982.20953112587
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9979.672133151576
         }
       ]
     },
     {
       "id": "triple-ema",
       "name": "Triple EMA 8/21/55",
-      "equity": 9974.675098553229,
-      "pnl": -25.324901446771037,
-      "pnlPct": -0.25324901446771036,
-      "cash": 2779.860626855953,
-      "realizedPnL": -6.939373144046549,
-      "openCount": 9,
-      "tradeCount": 13,
+      "equity": 9974.394596117458,
+      "pnl": -25.605403882542305,
+      "pnlPct": -0.25605403882542305,
+      "cash": 1970.9224942695846,
+      "realizedPnL": -13.477505730414586,
+      "openCount": 10,
+      "tradeCount": 16,
       "riskMult": 1,
       "metrics": {
-        "closedTrades": 2,
+        "closedTrades": 3,
         "winRate": 0,
-        "expectancy": -3.4696865720232744,
+        "expectancy": -4.492501910138196,
         "profitFactor": 0,
-        "totalReturnPct": -0.25324901446771036,
+        "totalReturnPct": -0.25605403882542305,
         "maxDrawdownPct": 0.2542488454686551,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "FAILING",
-      "closedTrades": 2,
+      "closedTrades": 3,
       "winRate": 0,
       "positions": [
         {
@@ -1361,9 +1490,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 63449,
-          "mark": 63379,
-          "uPnl": 2.647795867547164,
-          "roi": 0.3309744834433955,
+          "mark": 63319,
+          "uPnl": 4.91733518258759,
+          "roi": 0.6146668978234487,
           "liq": 84281.42166666666
         },
         {
@@ -1371,9 +1500,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.069968,
-          "mark": 0.06994,
-          "uPnl": 0.9604390578550278,
-          "roi": 0.12005488223187848,
+          "mark": 0.069928,
+          "uPnl": 1.3720557969356861,
+          "roi": 0.17150697461696077,
           "liq": 0.09294082666666667
         },
         {
@@ -1381,9 +1510,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": -1.6475972540044164,
-          "roi": -0.20594965675055205,
+          "mark": 611.3,
+          "uPnl": -1.961425302386401,
+          "roi": -0.24517816279830013,
           "liq": 410.92566666666664
         },
         {
@@ -1391,9 +1520,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.1818,
-          "mark": 0.18254,
-          "uPnl": -9.768976897690013,
-          "roi": -1.2211221122112517,
+          "mark": 0.18223,
+          "uPnl": -5.676567656765858,
+          "roi": -0.7095709570957323,
           "liq": 0.24149099999999998
         },
         {
@@ -1401,9 +1530,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 44.824,
-          "mark": 44.877,
-          "uPnl": -2.837765482777318,
-          "roi": -0.3547206853471648,
+          "mark": 44.789,
+          "uPnl": 1.873996073531854,
+          "roi": 0.23424950919148174,
           "liq": 59.54121333333333
         },
         {
@@ -1411,29 +1540,19 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.33436,
-          "mark": 0.33416,
-          "uPnl": 1.435578418470951,
-          "roi": 0.17944730230886888,
+          "mark": 0.33381,
+          "uPnl": 3.9478406507955137,
+          "roi": 0.4934800813494392,
           "liq": 0.44414153333333334
-        },
-        {
-          "symbol": "AVAX",
-          "side": "long",
-          "leverage": 3,
-          "entry": 6.426,
-          "mark": 6.4288,
-          "uPnl": 1.045751633986813,
-          "roi": 0.13071895424835162,
-          "liq": 4.31613
         },
         {
           "symbol": "LINK",
           "side": "long",
           "leverage": 3,
           "entry": 8.8166,
-          "mark": 8.8299,
-          "uPnl": 3.6204432547696785,
-          "roi": 0.4525554068462098,
+          "mark": 8.8141,
+          "uPnl": -0.6805344463850925,
+          "roi": -0.08506680579813657,
           "liq": 5.921816333333332
         },
         {
@@ -1441,24 +1560,33 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.07486,
-          "mark": 0.07488,
-          "uPnl": -0.6411969008818421,
-          "roi": -0.08014961261023026,
+          "mark": 0.07487,
+          "uPnl": -0.3205984504411435,
+          "roi": -0.040074806305142936,
           "liq": 0.09943903333333333
+        },
+        {
+          "symbol": "ETH",
+          "side": "short",
+          "leverage": 3,
+          "entry": 1882,
+          "mark": 1882,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 2499.923333333333
+        },
+        {
+          "symbol": "SOL",
+          "side": "short",
+          "leverage": 3,
+          "entry": 75.735,
+          "mark": 75.735,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 100.601325
         }
       ],
       "trades": [
-        {
-          "ts": "2026-08-14T03:11:38.665Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "BTC",
-          "price": 63449,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 0.037825655250673766
-        },
         {
           "ts": "2026-08-14T03:11:38.992Z",
           "action": "OPEN",
@@ -1590,6 +1718,39 @@
           "exit": 75.814,
           "pnl": -3.4443803123150714,
           "roi": -0.4305475390393839
+        },
+        {
+          "ts": "2026-08-14T04:00:01.562Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "ETH",
+          "price": 1882,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 1.2752391073326248
+        },
+        {
+          "ts": "2026-08-14T04:00:01.878Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOL",
+          "price": 75.735,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 31.689443454149337
+        },
+        {
+          "ts": "2026-08-14T04:00:04.529Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "AVAX",
+          "entry": 6.426,
+          "exit": 6.4117,
+          "pnl": -6.538132586368038,
+          "roi": -0.8172665732960047
         }
       ],
       "equityHistory": [
@@ -1608,33 +1769,37 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9974.675098553229
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9974.394596117458
         }
       ]
     },
     {
       "id": "ema-cross-1226",
       "name": "EMA 12/26 Cross",
-      "equity": 9971.1468027004,
-      "pnl": -28.85319729960065,
-      "pnlPct": -0.28853197299600647,
-      "cash": 374.1772809393208,
-      "realizedPnL": -9.022719060678984,
+      "equity": 9970.811186076668,
+      "pnl": -29.188813923332418,
+      "pnlPct": -0.2918881392333242,
+      "cash": 370.0048699670417,
+      "realizedPnL": -11.995130032957931,
       "openCount": 12,
-      "tradeCount": 16,
+      "tradeCount": 18,
       "riskMult": 1,
       "metrics": {
-        "closedTrades": 2,
+        "closedTrades": 3,
         "winRate": 0,
-        "expectancy": -4.511359530339492,
+        "expectancy": -3.9983766776526437,
         "profitFactor": 0,
-        "totalReturnPct": -0.28853197299600647,
+        "totalReturnPct": -0.2918881392333242,
         "maxDrawdownPct": 0.19931234318508675,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "FAILING",
-      "closedTrades": 2,
+      "closedTrades": 3,
       "winRate": 0,
       "positions": [
         {
@@ -1642,29 +1807,19 @@
           "side": "short",
           "leverage": 3,
           "entry": 63449,
-          "mark": 63379,
-          "uPnl": 2.647795867547164,
-          "roi": 0.3309744834433955,
+          "mark": 63319,
+          "uPnl": 4.91733518258759,
+          "roi": 0.6146668978234487,
           "liq": 84281.42166666666
-        },
-        {
-          "symbol": "SOL",
-          "side": "long",
-          "leverage": 3,
-          "entry": 75.791,
-          "mark": 75.814,
-          "uPnl": 0.7283186658045246,
-          "roi": 0.09103983322556558,
-          "liq": 50.90628833333333
         },
         {
           "symbol": "XRP",
           "side": "long",
           "leverage": 3,
           "entry": 1.0093,
-          "mark": 1.0099,
-          "uPnl": 1.4267313979984555,
-          "roi": 0.17834142474980694,
+          "mark": 1.0093,
+          "uPnl": 0,
+          "roi": 0,
           "liq": 0.6779131666666667
         },
         {
@@ -1672,9 +1827,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.069968,
-          "mark": 0.06994,
-          "uPnl": 0.9604390578550278,
-          "roi": 0.12005488223187848,
+          "mark": 0.069928,
+          "uPnl": 1.3720557969356861,
+          "roi": 0.17150697461696077,
           "liq": 0.09294082666666667
         },
         {
@@ -1682,9 +1837,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": -1.6475972540044164,
-          "roi": -0.20594965675055205,
+          "mark": 611.3,
+          "uPnl": -1.961425302386401,
+          "roi": -0.24517816279830013,
           "liq": 410.92566666666664
         },
         {
@@ -1692,9 +1847,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.1818,
-          "mark": 0.18254,
-          "uPnl": -9.768976897690013,
-          "roi": -1.2211221122112517,
+          "mark": 0.18223,
+          "uPnl": -5.676567656765858,
+          "roi": -0.7095709570957323,
           "liq": 0.24149099999999998
         },
         {
@@ -1702,9 +1857,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 44.824,
-          "mark": 44.877,
-          "uPnl": -2.837765482777318,
-          "roi": -0.3547206853471648,
+          "mark": 44.789,
+          "uPnl": 1.873996073531854,
+          "roi": 0.23424950919148174,
           "liq": 59.54121333333333
         },
         {
@@ -1712,9 +1867,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.33436,
-          "mark": 0.33416,
-          "uPnl": 1.435578418470951,
-          "roi": 0.17944730230886888,
+          "mark": 0.33381,
+          "uPnl": 3.9478406507955137,
+          "roi": 0.4934800813494392,
           "liq": 0.44414153333333334
         },
         {
@@ -1722,9 +1877,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 6.426,
-          "mark": 6.4288,
-          "uPnl": 1.045751633986813,
-          "roi": 0.13071895424835162,
+          "mark": 6.4117,
+          "uPnl": -5.340802987861969,
+          "roi": -0.6676003734827461,
           "liq": 4.31613
         },
         {
@@ -1732,9 +1887,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 8.8166,
-          "mark": 8.8299,
-          "uPnl": 3.6204432547696785,
-          "roi": 0.4525554068462098,
+          "mark": 8.8141,
+          "uPnl": -0.6805344463850925,
+          "roi": -0.08506680579813657,
           "liq": 5.921816333333332
         },
         {
@@ -1742,9 +1897,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.07486,
-          "mark": 0.07488,
-          "uPnl": -0.6411969008818421,
-          "roi": -0.08014961261023026,
+          "mark": 0.07487,
+          "uPnl": -0.3205984504411435,
+          "roi": -0.040074806305142936,
           "liq": 0.09943903333333333
         },
         {
@@ -1752,35 +1907,23 @@
           "side": "short",
           "leverage": 3,
           "entry": 1884.1,
-          "mark": 1884.1,
+          "mark": 1882,
+          "uPnl": 2.6750172496150855,
+          "roi": 0.3343771562018857,
+          "liq": 2502.7128333333335
+        },
+        {
+          "symbol": "SOL",
+          "side": "short",
+          "leverage": 3,
+          "entry": 75.735,
+          "mark": 75.735,
           "uPnl": 0,
           "roi": 0,
-          "liq": 2502.7128333333335
+          "liq": 100.601325
         }
       ],
       "trades": [
-        {
-          "ts": "2026-08-14T03:11:38.990Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "ETH",
-          "price": 1883.3,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 1.274358838209526
-        },
-        {
-          "ts": "2026-08-14T03:11:39.163Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "SOL",
-          "price": 75.791,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 31.66602894802813
-        },
         {
           "ts": "2026-08-14T03:11:39.437Z",
           "action": "OPEN",
@@ -1923,6 +2066,28 @@
           "notional": 2400,
           "fee": 1.2,
           "coinQty": 1.2738177379120006
+        },
+        {
+          "ts": "2026-08-14T04:00:01.877Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "SOL",
+          "entry": 75.791,
+          "exit": 75.735,
+          "pnl": -2.972410972278948,
+          "roi": -0.3715513715348685
+        },
+        {
+          "ts": "2026-08-14T04:00:01.877Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOL",
+          "price": 75.735,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 31.689443454149337
         }
       ],
       "equityHistory": [
@@ -1941,33 +2106,37 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9971.1468027004
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9970.811186076668
         }
       ]
     },
     {
       "id": "tsi-momentum",
       "name": "TSI Momentum",
-      "equity": 9971.1468027004,
-      "pnl": -28.85319729960065,
-      "pnlPct": -0.28853197299600647,
-      "cash": 374.1772809393208,
-      "realizedPnL": -9.022719060678984,
+      "equity": 9970.811186076668,
+      "pnl": -29.188813923332418,
+      "pnlPct": -0.2918881392333242,
+      "cash": 370.0048699670417,
+      "realizedPnL": -11.995130032957931,
       "openCount": 12,
-      "tradeCount": 16,
+      "tradeCount": 18,
       "riskMult": 1,
       "metrics": {
-        "closedTrades": 2,
+        "closedTrades": 3,
         "winRate": 0,
-        "expectancy": -4.511359530339492,
+        "expectancy": -3.9983766776526437,
         "profitFactor": 0,
-        "totalReturnPct": -0.28853197299600647,
+        "totalReturnPct": -0.2918881392333242,
         "maxDrawdownPct": 0.19931234318508675,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "FAILING",
-      "closedTrades": 2,
+      "closedTrades": 3,
       "winRate": 0,
       "positions": [
         {
@@ -1975,29 +2144,19 @@
           "side": "short",
           "leverage": 3,
           "entry": 63449,
-          "mark": 63379,
-          "uPnl": 2.647795867547164,
-          "roi": 0.3309744834433955,
+          "mark": 63319,
+          "uPnl": 4.91733518258759,
+          "roi": 0.6146668978234487,
           "liq": 84281.42166666666
-        },
-        {
-          "symbol": "SOL",
-          "side": "long",
-          "leverage": 3,
-          "entry": 75.791,
-          "mark": 75.814,
-          "uPnl": 0.7283186658045246,
-          "roi": 0.09103983322556558,
-          "liq": 50.90628833333333
         },
         {
           "symbol": "XRP",
           "side": "long",
           "leverage": 3,
           "entry": 1.0093,
-          "mark": 1.0099,
-          "uPnl": 1.4267313979984555,
-          "roi": 0.17834142474980694,
+          "mark": 1.0093,
+          "uPnl": 0,
+          "roi": 0,
           "liq": 0.6779131666666667
         },
         {
@@ -2005,9 +2164,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.069968,
-          "mark": 0.06994,
-          "uPnl": 0.9604390578550278,
-          "roi": 0.12005488223187848,
+          "mark": 0.069928,
+          "uPnl": 1.3720557969356861,
+          "roi": 0.17150697461696077,
           "liq": 0.09294082666666667
         },
         {
@@ -2015,9 +2174,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": -1.6475972540044164,
-          "roi": -0.20594965675055205,
+          "mark": 611.3,
+          "uPnl": -1.961425302386401,
+          "roi": -0.24517816279830013,
           "liq": 410.92566666666664
         },
         {
@@ -2025,9 +2184,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.1818,
-          "mark": 0.18254,
-          "uPnl": -9.768976897690013,
-          "roi": -1.2211221122112517,
+          "mark": 0.18223,
+          "uPnl": -5.676567656765858,
+          "roi": -0.7095709570957323,
           "liq": 0.24149099999999998
         },
         {
@@ -2035,9 +2194,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 44.824,
-          "mark": 44.877,
-          "uPnl": -2.837765482777318,
-          "roi": -0.3547206853471648,
+          "mark": 44.789,
+          "uPnl": 1.873996073531854,
+          "roi": 0.23424950919148174,
           "liq": 59.54121333333333
         },
         {
@@ -2045,9 +2204,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.33436,
-          "mark": 0.33416,
-          "uPnl": 1.435578418470951,
-          "roi": 0.17944730230886888,
+          "mark": 0.33381,
+          "uPnl": 3.9478406507955137,
+          "roi": 0.4934800813494392,
           "liq": 0.44414153333333334
         },
         {
@@ -2055,9 +2214,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 6.426,
-          "mark": 6.4288,
-          "uPnl": 1.045751633986813,
-          "roi": 0.13071895424835162,
+          "mark": 6.4117,
+          "uPnl": -5.340802987861969,
+          "roi": -0.6676003734827461,
           "liq": 4.31613
         },
         {
@@ -2065,9 +2224,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 8.8166,
-          "mark": 8.8299,
-          "uPnl": 3.6204432547696785,
-          "roi": 0.4525554068462098,
+          "mark": 8.8141,
+          "uPnl": -0.6805344463850925,
+          "roi": -0.08506680579813657,
           "liq": 5.921816333333332
         },
         {
@@ -2075,9 +2234,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.07486,
-          "mark": 0.07488,
-          "uPnl": -0.6411969008818421,
-          "roi": -0.08014961261023026,
+          "mark": 0.07487,
+          "uPnl": -0.3205984504411435,
+          "roi": -0.040074806305142936,
           "liq": 0.09943903333333333
         },
         {
@@ -2085,35 +2244,23 @@
           "side": "short",
           "leverage": 3,
           "entry": 1884.1,
-          "mark": 1884.1,
+          "mark": 1882,
+          "uPnl": 2.6750172496150855,
+          "roi": 0.3343771562018857,
+          "liq": 2502.7128333333335
+        },
+        {
+          "symbol": "SOL",
+          "side": "short",
+          "leverage": 3,
+          "entry": 75.735,
+          "mark": 75.735,
           "uPnl": 0,
           "roi": 0,
-          "liq": 2502.7128333333335
+          "liq": 100.601325
         }
       ],
       "trades": [
-        {
-          "ts": "2026-08-14T03:11:38.993Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "ETH",
-          "price": 1883.3,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 1.274358838209526
-        },
-        {
-          "ts": "2026-08-14T03:11:39.164Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "SOL",
-          "price": 75.791,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 31.66602894802813
-        },
         {
           "ts": "2026-08-14T03:11:39.438Z",
           "action": "OPEN",
@@ -2256,6 +2403,28 @@
           "notional": 2400,
           "fee": 1.2,
           "coinQty": 1.2738177379120006
+        },
+        {
+          "ts": "2026-08-14T04:00:01.879Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "SOL",
+          "entry": 75.791,
+          "exit": 75.735,
+          "pnl": -2.972410972278948,
+          "roi": -0.3715513715348685
+        },
+        {
+          "ts": "2026-08-14T04:00:01.879Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOL",
+          "price": 75.735,
+          "margin": 800,
+          "notional": 2400,
+          "fee": 1.2,
+          "coinQty": 31.689443454149337
         }
       ],
       "equityHistory": [
@@ -2274,33 +2443,37 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9971.1468027004
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9970.811186076668
         }
       ]
     },
     {
       "id": "donchian-mid",
       "name": "Donchian Midline",
-      "equity": 9943.939799639262,
-      "pnl": -56.060200360738236,
-      "pnlPct": -0.5606020036073823,
-      "cash": 347.3471838063499,
-      "realizedPnL": -33.45281619364964,
+      "equity": 9939.263404490426,
+      "pnl": -60.73659550957382,
+      "pnlPct": -0.6073659550957382,
+      "cash": 371.22800685037726,
+      "realizedPnL": -42.46752381628861,
       "openCount": 12,
-      "tradeCount": 20,
-      "riskMult": 1,
+      "tradeCount": 24,
+      "riskMult": 0.9779733333333334,
       "metrics": {
-        "closedTrades": 4,
+        "closedTrades": 6,
         "winRate": 0,
-        "expectancy": -8.36320404841241,
+        "expectancy": -7.077920636048102,
         "profitFactor": 0,
-        "totalReturnPct": -0.5606020036073823,
-        "maxDrawdownPct": 0.41720277560423796,
+        "totalReturnPct": -0.6073659550957382,
+        "maxDrawdownPct": 0.46403416429230465,
         "sharpe": null,
         "sortino": null,
-        "days": 0.023191261574074074
+        "days": 0.03361196759259259
       },
       "status": "FAILING",
-      "closedTrades": 4,
+      "closedTrades": 6,
       "winRate": 0,
       "positions": [
         {
@@ -2308,9 +2481,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 1883.3,
-          "mark": 1884.1,
-          "uPnl": 1.0194870705675627,
-          "roi": 0.12743588382094534,
+          "mark": 1882,
+          "uPnl": -1.6566664896723258,
+          "roi": -0.2070833112090407,
           "liq": 1264.9498333333333
         },
         {
@@ -2318,9 +2491,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 1.0093,
-          "mark": 1.0099,
-          "uPnl": 1.4267313979984555,
-          "roi": 0.17834142474980694,
+          "mark": 1.0093,
+          "uPnl": 0,
+          "roi": 0,
           "liq": 0.6779131666666667
         },
         {
@@ -2328,9 +2501,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.069968,
-          "mark": 0.06994,
-          "uPnl": 0.9604390578550278,
-          "roi": 0.12005488223187848,
+          "mark": 0.069928,
+          "uPnl": 1.3720557969356861,
+          "roi": 0.17150697461696077,
           "liq": 0.09294082666666667
         },
         {
@@ -2338,9 +2511,9 @@
           "side": "long",
           "leverage": 3,
           "entry": 611.8,
-          "mark": 611.38,
-          "uPnl": -1.6475972540044164,
-          "roi": -0.20594965675055205,
+          "mark": 611.3,
+          "uPnl": -1.961425302386401,
+          "roi": -0.24517816279830013,
           "liq": 410.92566666666664
         },
         {
@@ -2348,29 +2521,19 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.1818,
-          "mark": 0.18254,
-          "uPnl": -9.768976897690013,
-          "roi": -1.2211221122112517,
+          "mark": 0.18223,
+          "uPnl": -5.676567656765858,
+          "roi": -0.7095709570957323,
           "liq": 0.24149099999999998
-        },
-        {
-          "symbol": "LTC",
-          "side": "long",
-          "leverage": 3,
-          "entry": 44.824,
-          "mark": 44.877,
-          "uPnl": 2.837765482777318,
-          "roi": 0.3547206853471648,
-          "liq": 30.106786666666665
         },
         {
           "symbol": "TRX",
           "side": "short",
           "leverage": 3,
           "entry": 0.33436,
-          "mark": 0.33416,
-          "uPnl": 1.435578418470951,
-          "roi": 0.17944730230886888,
+          "mark": 0.33381,
+          "uPnl": 3.9478406507955137,
+          "roi": 0.4934800813494392,
           "liq": 0.44414153333333334
         },
         {
@@ -2378,9 +2541,9 @@
           "side": "short",
           "leverage": 3,
           "entry": 6.426,
-          "mark": 6.4288,
-          "uPnl": -1.045751633986813,
-          "roi": -0.13071895424835162,
+          "mark": 6.4117,
+          "uPnl": 5.340802987861969,
+          "roi": 0.6676003734827461,
           "liq": 8.535870000000001
         },
         {
@@ -2388,29 +2551,19 @@
           "side": "long",
           "leverage": 3,
           "entry": 8.8166,
-          "mark": 8.8299,
-          "uPnl": 3.6204432547696785,
-          "roi": 0.4525554068462098,
+          "mark": 8.8141,
+          "uPnl": -0.6805344463850925,
+          "roi": -0.08506680579813657,
           "liq": 5.921816333333332
-        },
-        {
-          "symbol": "SOL",
-          "side": "long",
-          "leverage": 3,
-          "entry": 75.885,
-          "mark": 75.814,
-          "uPnl": -2.2455030638469946,
-          "roi": -0.2806878829808743,
-          "liq": 50.969425
         },
         {
           "symbol": "BTC",
           "side": "short",
           "leverage": 3,
           "entry": 63379,
-          "mark": 63379,
-          "uPnl": 0,
-          "roi": 0,
+          "mark": 63319,
+          "uPnl": 2.2720459458180158,
+          "roi": 0.28400574322725197,
           "liq": 84188.43833333334
         },
         {
@@ -2418,57 +2571,33 @@
           "side": "short",
           "leverage": 3,
           "entry": 0.07488,
-          "mark": 0.07488,
+          "mark": 0.07487,
+          "uPnl": 0.32051282051269625,
+          "roi": 0.04006410256408703,
+          "liq": 0.0994656
+        },
+        {
+          "symbol": "SOL",
+          "side": "short",
+          "leverage": 3,
+          "entry": 75.735,
+          "mark": 75.735,
           "uPnl": 0,
           "roi": 0,
-          "liq": 0.0994656
+          "liq": 100.601325
+        },
+        {
+          "symbol": "LTC",
+          "side": "short",
+          "leverage": 3,
+          "entry": 44.789,
+          "mark": 44.789,
+          "uPnl": 0,
+          "roi": 0,
+          "liq": 59.49472166666667
         }
       ],
       "trades": [
-        {
-          "ts": "2026-08-14T03:11:39.763Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "BNB",
-          "price": 611.8,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 3.922850604772802
-        },
-        {
-          "ts": "2026-08-14T03:11:39.922Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "ADA",
-          "price": 0.1818,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 13201.320132013203
-        },
-        {
-          "ts": "2026-08-14T03:11:40.103Z",
-          "action": "OPEN",
-          "side": "long",
-          "symbol": "LTC",
-          "price": 44.824,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 53.54274495805819
-        },
-        {
-          "ts": "2026-08-14T03:11:40.259Z",
-          "action": "OPEN",
-          "side": "short",
-          "symbol": "TRX",
-          "price": 0.33436,
-          "margin": 800,
-          "notional": 2400,
-          "fee": 1.2,
-          "coinQty": 7177.892092355545
-        },
         {
           "ts": "2026-08-14T03:11:40.573Z",
           "action": "OPEN",
@@ -2589,6 +2718,50 @@
           "notional": 2400,
           "fee": 1.2,
           "coinQty": 32051.28205128205
+        },
+        {
+          "ts": "2026-08-14T04:00:01.867Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "SOL",
+          "entry": 75.885,
+          "exit": 75.735,
+          "pnl": -5.941648547143884,
+          "roi": -0.7427060683929855
+        },
+        {
+          "ts": "2026-08-14T04:00:01.876Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "SOL",
+          "price": 75.735,
+          "margin": 782.3786666666667,
+          "notional": 2347.1360000000004,
+          "fee": 1.1735680000000002,
+          "coinQty": 30.991430646332613
+        },
+        {
+          "ts": "2026-08-14T04:00:03.811Z",
+          "action": "CLOSE",
+          "reason": "signal",
+          "side": "long",
+          "symbol": "LTC",
+          "entry": 44.824,
+          "exit": 44.789,
+          "pnl": -3.073059075495088,
+          "roi": -0.384132384436886
+        },
+        {
+          "ts": "2026-08-14T04:00:03.812Z",
+          "action": "OPEN",
+          "side": "short",
+          "symbol": "LTC",
+          "price": 44.789,
+          "margin": 782.3786666666667,
+          "notional": 2347.1360000000004,
+          "fee": 1.1735680000000002,
+          "coinQty": 52.40429569760433
         }
       ],
       "equityHistory": [
@@ -2607,6 +2780,10 @@
         {
           "t": "2026-08-14T03:45:04.844Z",
           "equity": 9943.939799639262
+        },
+        {
+          "t": "2026-08-14T04:00:05.193Z",
+          "equity": 9939.263404490426
         }
       ]
     }
